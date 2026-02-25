@@ -1,0 +1,27 @@
+# Secrets
+.env
+
+# Dataset shards (huge — use HuggingFace/S3 instead)
+edu_fineweb10B/
+hellaswag/
+
+# Model checkpoints & logs (large — use W&B/HF Hub instead)
+log/
+*.pt
+*.pth
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
