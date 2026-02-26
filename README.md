@@ -20,6 +20,29 @@ This project replicates the GPT-2 (124M) pretraining pipeline end-to-end:
 
 ---
 
+# GPT-2 124M — Pretrained from Scratch
+
+Trained on FineWeb-Edu 10B tokens using Andrej Karpathy's build-nanogpt.
+
+## Results
+
+| Step | Val Loss | HellaSwag |
+| ---- | -------- | --------- | --------------------- |
+| 0    | 10.9517  | 0.2482    |
+| 1000 | 4.1443   | 0.2573    |
+| 3000 | 3.4432   | 0.2717    |
+| 5000 | ~3.35    | ~0.279    |
+| 5449 | —        | —         | ← run ended (credits) |
+
+GPT-2 124M official baseline: HellaSwag = 0.2955
+
+## Hardware
+
+- Lightning AI H100 (1x)
+- ~2.6 hrs to step 5449
+
+---
+
 ## Project Structure
 
 ```
@@ -30,6 +53,8 @@ This project replicates the GPT-2 (124M) pretraining pipeline end-to-end:
 ├── index.txt           \# tiny_shakespeare dataset (1.1M chars ~ 338k tokens)
 ├── hellaswag.py        \# HellaSwag benchmark evaluation
 ├── playground.ipynb    \# Playground notebook
+├── log/                \# Training logs and checkpoints
+├── gpt2_training.ipynb \# Training notebook for Kaggle GPU
 ├── .env.example        \# Template for environment variables
 ├── .gitignore
 └── README.md
