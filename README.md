@@ -53,6 +53,8 @@ GPT-2 124M official baseline: HellaSwag = 0.2955
 ├── index.txt           \# tiny_shakespeare dataset (1.1M chars ~ 338k tokens)
 ├── hellaswag.py        \# HellaSwag benchmark evaluation
 ├── playground.ipynb    \# Playground notebook
+├── log/                \# Training logs and checkpoints
+├── gpt2_training.ipynb \# Training notebook for Kaggle GPU
 ├── .env.example        \# Template for environment variables
 ├── .gitignore
 └── README.md
