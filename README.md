@@ -27,12 +27,12 @@ Trained on FineWeb-Edu 10B tokens using Andrej Karpathy's build-nanogpt.
 ## Results
 
 | Step | Val Loss | HellaSwag |
-| ---- | -------- | --------- | --------------------- |
+| ---- | -------- | --------- |
 | 0    | 10.9517  | 0.2482    |
 | 1000 | 4.1443   | 0.2573    |
 | 3000 | 3.4432   | 0.2717    |
 | 5000 | ~3.35    | ~0.279    |
-| 5449 | —        | —         | ← run ended (credits) |
+| 5449 | —        | —         | ← run ended (credits)
 
 GPT-2 124M official baseline: HellaSwag = 0.2955
 
