@@ -6,7 +6,6 @@ edu_fineweb10B/
 hellaswag/
 
 # Model checkpoints & logs (large — use W&B/HF Hub instead)
-log/
 *.pt
 *.pth
 
